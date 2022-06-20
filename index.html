@@ -388,10 +388,39 @@
             </li>
           </ul>
         </div>
+        <div class="footer-join-box">
+          <p class="footer-join-text">Подпишитесь на рассылку</p>
+          <div>
+            <input class="input-footer" type="email" name="mail" placeholder="E-mail" />
+            <button class="button-studio" type="submit" id="mail">
+              Подписаться
+              <svg width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <p>Оставьте свои данные, мы вам перезвоним</p>
+        <form action="">
+          <label for="name">Имя</label>
+          <input type="text" name="name" id="name" />
+          <label for="tel">Телефон</label>
+          <input type="tel" name="tel" id="tel" />
+          <label for="email">Почта</label>
+          <input type="email" name="email" id="email" />
+          <label for="feedback">Комментарий</label>
+          <textarea name="feedback" rows="3" placeholder="Введите текст"></textarea>
+          <input type="chekbox" name="mailing" id="mailing" />
+          <label for="mailing"
+            >Соглашаюсь с рассылкой и принимаю
+            <a href="">Условия договора</a>
+          </label>
+          <button type="submit">Отправить</button>
+        </form>
         <button class="modal-close-button" data-modal-close>
           <svg width="11" height="11">
             <use href="./images/symbol-defs.svg#icon-cross"></use>

@@ -149,9 +149,7 @@ body {
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
     text-decoration: none;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contact-envelope{
@@ -209,6 +207,9 @@ body {
 }
 
 .button-studio{
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
     padding: 10px 32px;
     margin-top: 30px;
     border-radius: 4px;
@@ -547,9 +548,7 @@ body {
     background-color: rgba(33, 150, 243, 0.9);
 
     transform: translateY(100%);
-    transition-property: transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-link:hover .portfolio-link-overlay,
@@ -623,10 +622,7 @@ body {
     color: var(--footer-opacity);
     text-decoration: none;
     font-style: normal;
-
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-adress-contact:hover,
@@ -665,9 +661,7 @@ body {
     border-radius: 50%;
 
     background-color: rgba(255, 255, 255, 10%);
-    transition-property: background-color ;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-link:hover,
@@ -677,6 +671,20 @@ body {
 
 .join-link svg{
     fill: var(--negative-color);
+}
+
+.button-studio svg{
+    fill: currentColor;
+}
+
+.input-footer{
+    color: var(--negative-color);
+    padding: 16px 15px;
+
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
 }
 
 /* Backdrop */
@@ -712,6 +720,10 @@ body {
     transform: translate(-50%, -50%) scale(1);
     min-width: 528px;
     min-height: 581px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+                0px 1px 1px rgba(0, 0, 0, 0.14),
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
 
     background-color: var(--negative-color);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -733,6 +745,6 @@ body {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-button:hover {
-    fill: var(--accent-color);
+.block{
+    display: block;
 }

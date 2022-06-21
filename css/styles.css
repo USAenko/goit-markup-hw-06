@@ -874,7 +874,7 @@ body {
 
 .checkbox-icon{
     position: absolute;
-    top: 4px;
+    top: 3px;
     left: 10px;
     display: inline-block;
     width: 15px;
@@ -885,7 +885,7 @@ body {
 
 .form-policy-input:checked + .checkbox-icon{
     border-color: var(--accent-color);
-    /* background-color: var(--accent-color); */
+    background-color:     var(--accent-color);
     background-image: url(../images/check-mark.svg);
 }
 

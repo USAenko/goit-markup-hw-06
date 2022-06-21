@@ -676,7 +676,7 @@ body {
 
 .input-footer{
     min-width: 358px;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--negative-color);
     padding: 16px 15px;
     font-size: 16px;
     line-height: 1.25;
@@ -877,7 +877,7 @@ body {
     top: 3px;
     left: 10px;
     display: inline-block;
-    width: 15px;
+    width: 16px;
     height: 15px;
     border: 2px solid var(--primary-text-color);
     border-radius: 2px;
@@ -885,8 +885,9 @@ body {
 
 .form-policy-input:checked + .checkbox-icon{
     border-color: var(--accent-color);
-    background-color:     var(--accent-color);
-    background-image: url(../images/check-mark.svg);
+    background-color: var(--accent-color);
+    background-image: url(../images/icon-check.svg);
+    background-origin: border-box; 
 }
 
 .form-policy-label{

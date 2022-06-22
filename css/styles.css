@@ -828,7 +828,11 @@ body {
 }
 
 .form-input{
-    max-height: 40px;
+    min-height: 40px;
+}
+
+.form-feedback-textarea{
+    min-height: 120px;
 }
 
 .form-input,
